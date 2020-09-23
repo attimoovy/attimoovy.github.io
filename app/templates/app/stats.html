@@ -1,0 +1,43 @@
+{% extends "app/layout.html" %}
+
+{% block body %}
+<div class="container">
+    <div class="content">
+        <form>
+            <label id="country_label" for="country">Search Country:</label>
+            <input id="country_input" placeholder="Country Name" type="text">
+            <input id="country_submit" class="country_search" type="submit" value="Search Cases">
+            
+        </form>
+        <button id="country_submit" class="global">Global Stats</button>
+        <div class="country_contain">
+            <h1 id="country">Select a Country</h1>
+        </div>
+        
+    <div id="result">
+        
+        <div class="stat_content">
+            <h2>New Cases</h2><br>
+            <p id="new_cases">Stats Pending</p>
+            <h2>Total Cases</h2><br>
+            <p id="total_cases">Stats Pending</p>
+        </div>
+        <div class="stat_content">
+            <h2>New Recovered</h2><br>
+            <p id="new_recover">Stats Pending</p>
+            <h2>Total Recovered</h2><br>
+            <p id="total_recover">Stats Pending</p>
+        </div>
+        <div class="stat_content">
+            <h2>New Deaths</h2><br>
+            <p id="new_deaths">Stats Pending</p>
+            <h2>Total Deaths</h2><br>
+            <p id="total_deaths">Stats Pending</p>
+        </div>
+        
+        
+    </div>
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% load static %}
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <link rel="stylesheet" type="text/css" href="{% static 'app/styles.css' %}">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <nav>
+            <div id="nav-logo">
+                <h5>Covid-19</h5>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'quiz' %}">Take the Quiz</a></li>
+                    <li><a href="{% url 'stats' %}">Check the Stats</a></li>
+                    <li><a href="{% url 'learn' %}">Learn</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+        </nav>
+        <script src="{% static 'app/app.js' %}" defer></script>
+        {% block body %}
+        {% endblock %}
+        
+    </body>
+    
+        
+        
+    
+</html>

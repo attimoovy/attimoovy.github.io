@@ -1,0 +1,32 @@
+{% extends "app/layout.html" %}
+
+    
+
+
+{% block body %}
+<div class="start">
+    <button onclick="showQuiz()" id="startQuiz" class="quiz__button">Start Quiz</button>
+</div>
+
+<div class="quiz-content">
+    
+    <div class="quiz-container">
+        <div id="quiz"></div>
+    </div>
+
+    <button class="quiz__button" id="previous">Previous Question</button>
+    <button class="quiz__button" id="next">Next Question</button><br>
+    <button class="quiz__button" id="submitQuiz">Submit Quiz</button>
+
+    
+</div>
+
+<div class="start">
+    <div id="results"></div>
+</div>
+
+<div class="restart">
+    <button onclick="reshowQuiz()" id="restartQuiz" class="quiz__button">Restart Quiz</button>
+</div>
+   
+{% endblock %}

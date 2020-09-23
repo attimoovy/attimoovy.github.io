@@ -1,0 +1,79 @@
+{% extends "app/layout.html" %}
+{% block head %}
+
+{% endblock %}
+{% block body %}
+<div class="container">
+    <div class="content">
+        <div class="first">
+            <div class="carousel">
+                
+
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">   
+                            
+                            <img class="carousel__image" src="static/app/img1.jpg">
+                            <p class="carousel__text" >Discover the symptoms of Covid-19.</p>
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="static/app/img2.jpg">
+                        </li>
+                        <li class="carousel__slide">
+                            <img class="carousel__image" src="static/app/img3.jpg">
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="carousel__button carousel__button--left is-hidden">
+                    <img src="static/app/back.png">
+                </button>
+                <button class="carousel__button carousel__button--right">
+                    <img src="static/app/arrow.png">
+                </button>
+
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="second__content second__first">
+                <img class="second__image" src="static/app/svg1.svg">
+                <h6>Discover global statistics of this pandemic.</h6>
+                <p><a href="{% url 'stats' %}">Learn More</a></p>  
+            </div>
+            <div class="second__content second__second">
+                <img class="second__image" src="static/app/svg2.svg">
+                <h6>Find out how to prevent contracting Covid-19.</h6>
+                <p><a href="{% url 'learn' %}">Learn More</a></p>
+            </div>
+            <div class="second__content second__third">
+                <img class="second__image" src="static/app/svg3.svg">
+                <h6>Learn the symptoms of Covid-19.</h6>
+                <p><a href="{% url 'learn' %}">Learn More</a></p>
+            </div>
+        </div>
+        <div class="third">
+            <h2>Know your stuff?</h2>
+            <h4>Take the Covid-19 quiz and find out now!</h4>
+            <div class="button"><p><a href="{% url 'quiz' %}">Go to Quiz</a></p></div>
+        </div>
+        <div class="fourth">
+            <h2>Get all the latest news & updates straight to your inbox</h2>
+            <form class="form">
+                <input type="email" placeholder="Your Email" id="email">
+                <input type="submit" id="submit" value="Sign Me Up"> 
+            </form>
+        </div>
+
+
+
+    
+    </div>
+    
+</div>
+
+{% endblock %}
